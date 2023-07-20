@@ -19,7 +19,7 @@ echo
 	desktop="gnome"
 	dmDesktop="gnome-xorg"
 
-	xerogVersion='2023.07'
+	xerogVersion='2023.08'
 
 	isoLabel='XeroG-'$xerogVersion'-x86_64.iso'
 
