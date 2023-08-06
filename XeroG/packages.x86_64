@@ -476,7 +476,9 @@ libpamac
 pamac-cli
 pamac-gtk
 pacseek-bin
+libpamac-aur-plugin
 libpamac-flatpak-plugin
+libpamac-appstream-plugin
 
 #######################################################
 ###                    EXTRAS                       ###
