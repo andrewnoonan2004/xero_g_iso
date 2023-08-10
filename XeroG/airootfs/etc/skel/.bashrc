@@ -65,20 +65,20 @@ alias userlist='cut -d: -f1 /etc/passwd'
 
 #Pacman for software managment
 alias upall='topgrade'
-alias search='sudo pacman -Qs'
-alias remove='sudo pacman -Rcns'
-alias install='sudo pacman -S'
+alias search='pamac search '
+alias remove='sudo pacman -R '
+alias install='sudo pacman -S '
 alias linstall='sudo pacman -U '
 alias update='sudo pacman -Syyu && flatpak update'
 alias clrcache='sudo pacman -Scc'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
-alias akring='sudo pacman -Sy archlinux-keyring --noconfirm'
 
 # Paru/Yay stuff
 alias pget='paru -S '
 alias yget='yay -S '
 alias yrem='yay -R '
 alias prem='paru -R '
+alias paur='sudo pamac update -a '
 
 #Bash aliases
 alias mkfile='touch'
