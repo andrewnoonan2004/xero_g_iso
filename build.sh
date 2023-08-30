@@ -24,7 +24,7 @@ echo
 	isoLabel='XeroG-'$xerogVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 71-1"
+	archisoRequiredVersion="archiso 72-1"
 	buildFolder=$HOME"/xerog-build"
 	outFolder=$HOME"/XeroG-Out"
 	archisoVersion=$(sudo pacman -Q archiso)

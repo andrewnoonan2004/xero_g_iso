@@ -1,9 +1,3 @@
-#####################################################################
-##                            PACKAGES AVAILABLE
-#####################################################################
-
-### archiso
-
 archiso
 alsa-utils
 amd-ucode
@@ -14,6 +8,7 @@ base
 base-devel
 bind
 brltty
+broadcom-wl
 btrfs-progs
 clonezilla
 cloud-init
@@ -30,6 +25,7 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
+espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -42,6 +38,7 @@ gpart
 gparted
 gpm
 gptfdisk
+grub
 hdparm
 hyperv
 intel-ucode
@@ -52,6 +49,7 @@ jfsutils
 kinit
 kitty-terminfo
 less
+lftp
 libfido2
 libusb-compat
 linux
@@ -81,8 +79,9 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
-openconnect
 open-iscsi
+openconnect
+openpgp-card-tools
 openssh
 openvpn
 partclone
@@ -96,8 +95,10 @@ reflector
 #refind
 rp-pppoe
 rsync
+rxvt-unicode-terminfo
 screen
 sdparm
+sequoia-sq
 sg3_utils
 smartmontools
 sof-firmware
@@ -110,11 +111,13 @@ terminus-font
 testdisk
 tldr
 tmux
+tpm2-tools
 tpm2-tss
 udftools
 usb_modeswitch
 usbmuxd
 usbutils
+vim
 vpnc
 wezterm-terminfo
 wireguard-tools
@@ -268,7 +271,9 @@ otf-libertinus
 tex-gyre-fonts
 ttf-hack-nerd
 xero-fonts-git
+ttf-ubuntu-font-family
 awesome-terminal-fonts
+ttf-jetbrains-mono-nerd
 adobe-source-sans-pro-fonts
 
 ### Theme Tools
@@ -277,7 +282,9 @@ qt5ct
 kvantum
 adw-gtk3
 neofetch
+gtk-engines
 adw-gtk-theme
+gnome-themes-extra
 gtk-engine-murrine
 
 ### Rice/Config Related
@@ -345,6 +352,7 @@ jsoncpp
 archey3
 fuseiso
 gettext
+gparted
 node-gyp
 intltool
 hw-probe
@@ -365,10 +373,12 @@ dbus-python
 dconf-editor
 laptop-detect
 perl-xml-parser
-#edid-decode-git
+edid-decode-git
+gnome-disk-utility
 appmenu-gtk-module
 hardcode-fixer-git
 extra-cmake-modules
+power-profiles-daemon
 
 ### G-Streamer
 
@@ -401,6 +411,7 @@ openldap
 nss-mdns
 smbclient
 net-tools
+openresolv
 traceroute
 modemmanager
 networkmanager
@@ -474,8 +485,8 @@ topgrade
 pamac-cli
 pacseek-bin
 pamac-nosnap
-libpamac-nosnap
 pacman-mirrorup
+libpamac-nosnap
 
 #######################################################
 ###                    EXTRAS                       ###
@@ -492,7 +503,7 @@ xorg-server
 spice-vdagent
 open-vm-tools
 qemu-guest-agent
-virtualbox-guest-utils
+virtualbox-guest-utils-nox
 
 
 #######################################################
