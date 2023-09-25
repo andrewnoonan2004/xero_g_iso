@@ -142,7 +142,6 @@ eza
 ntp
 most
 wget
-albert
 dialog
 repoctl
 dnsutils
@@ -566,7 +565,9 @@ gdm
 
 ## Gnome File Management
 
+gvfs-goa
 turtle-git
+gvfs-google
 nautilus-share
 nautilus-launch
 nautilus-compare
