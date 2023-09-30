@@ -19,12 +19,12 @@ echo
 	desktop="gnome"
 	dmDesktop="gnome-xorg"
 
-	xerogVersion='2023.09'
+	xerogVersion='2023.10'
 
 	isoLabel='XeroG-'$xerogVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 72-1"
+	archisoRequiredVersion="archiso 73-1"
 	buildFolder=$HOME"/xerog-build"
 	outFolder=$HOME"/XeroG-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
