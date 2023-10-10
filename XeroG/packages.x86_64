@@ -284,9 +284,7 @@ gst-plugin-pipewire
 ## Pipewire Audio
 
 wireplumber
-pipewire-jack
 pipewire-support
-lib32-pipewire-jack
 
 ### Bluetooth
 
@@ -629,7 +627,7 @@ nautilus-image-converter
 
 gnome-shell-extensions
 gnome-x11-gesture-daemon
-gnome-gesture-improvements
+#gnome-gesture-improvements
 
 ### Useful shit
 
