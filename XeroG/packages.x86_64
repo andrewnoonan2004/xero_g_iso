@@ -514,7 +514,6 @@ appstream
 cifs-utils
 lsb-release
 dbus-python
-dconf-editor
 laptop-detect
 perl-xml-parser
 edid-decode-git
