@@ -284,6 +284,7 @@ gst-plugin-pipewire
 ## Pipewire Audio
 
 wireplumber
+pipewire-jack
 pipewire-support
 
 ### Bluetooth
