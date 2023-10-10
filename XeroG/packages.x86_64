@@ -1,3 +1,7 @@
+#######################################################
+###                   Archiso                       ###
+#######################################################
+
 archiso
 alsa-utils
 amd-ucode
@@ -48,7 +52,6 @@ irssi
 iw
 iwd
 jfsutils
-kinit
 kitty-terminfo
 less
 lftp
@@ -94,7 +97,6 @@ ppp
 pptpclient
 pv
 reflector
-#refind
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
@@ -149,7 +151,78 @@ dnsutils
 logrotate
 
 #######################################################
-###                    XERO                         ###
+###                  Required                       ###
+#######################################################
+
+### XeroLinux Build
+
+xerowelcome
+xero-g-config
+calamares-app
+calamares-g-cfg
+xero-fix-scripts
+xerolinux-mirrorlist
+
+### Build Stuff
+
+xmlto
+boost
+ckbcomp
+yaml-cpp
+boost-libs
+mkinitcpio-openswap
+gtk-update-icon-cache
+
+### Grub Stuff
+
+grub
+os-prober
+grub-tools
+update-grub
+
+### Tools
+
+cryptsetup
+brightnessctl
+mkinitcpio-firmware
+power-profiles-daemon
+
+### Bash & Other
+
+dex
+bash
+make
+libxinerama
+bash-completion
+
+### Xorg Applications
+
+xorg-apps
+xorg-xrdb
+xorg-xkill
+xorg-xinit
+xorg-server
+
+### Essentials
+
+kio
+ki18n
+solid
+xmlto
+ckbcomp
+kconfig
+kpmcore
+qt5-base
+yaml-cpp
+boost-libs
+kcoreaddons
+kiconthemes
+polkit-gnome
+mkinitcpio-openswap
+gtk-update-icon-cache
+
+#######################################################
+###                  Hardware                       ###
 #######################################################
 
 ### Video
@@ -184,67 +257,82 @@ xf86-input-synaptics
 libinput_gestures_qt
 xf86-input-elographics
 
+### Network Adapters
+
+rtw89-dkms-git
+rtl8821ce-dkms-git
+
 ### Printers & Scanner support
 
+hplip
 hplip-plugin
 print-manager
 printer-support
 scanner-support
+system-config-printer
 
-### XeroLinux Build
+### G-Streamer
 
-xerowelcome
-xero-g-config
-calamares-app
-calamares-g-cfg
-xero-fix-scripts
-xerolinux-mirrorlist
+gstreamer
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-ugly
+gst-plugins-good
+gst-plugin-pipewire
+
+## Pipewire Audio
+
+wireplumber
+pipewire-jack
+pipewire-support
+lib32-pipewire-jack
+
+### Bluetooth
+
+bluez
+blueberry
+bluez-libs
+bluez-utils
+bluez-plugins
+bluez-hid2hci
+
+### Networking tools
+
+avahi
+openldap
+nss-mdns
+smbclient
+net-tools
+openresolv
+traceroute
+modemmanager
+networkmanager
+nm-cloud-setup
+rate-mirrors-bin
+systemd-resolvconf
+networkmanager-vpnc
+networkmanager-pptp
+networkmanager-l2tp
+nm-connection-editor
+network-manager-sstp
+network-manager-applet
+networkmanager-openvpn
+systemd-boot-pacman-hook
+networkmanager-strongswan
+networkmanager-openconnect
+mobile-broadband-provider-info
+
+### Virtual Machine
+
+spice-vdagent
+open-vm-tools
+qemu-guest-agent
+virtualbox-guest-utils
 
 #######################################################
-###      PACKAGES THAT STAY AFTER INSTALLATION      ###
+###                Applications                     ###
 #######################################################
-
-dex
-bash
-make
-xorg-xrdb
-xorg-xkill
-libxinerama
-bash-completion
-
-#######################################################
-###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
-#######################################################
-
-cryptsetup
-brightnessctl
-mkinitcpio-firmware
-power-profiles-daemon
-
-#######################################################
-###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
-#######################################################
-
-kio
-ki18n
-solid
-xmlto
-ckbcomp
-kconfig
-kpmcore
-qt5-base
-yaml-cpp
-boost-libs
-kcoreaddons
-kiconthemes
-polkit-gnome
-qalculate-gtk
-mkinitcpio-openswap
-gtk-update-icon-cache
-
-#########################################################################
-#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
-#########################################################################
 
 ### Applications
 
@@ -293,15 +381,77 @@ gtk-engine-murrine
 kvantum-theme-libadwaita-git
 tela-circle-icon-theme-blue-git
 
-### System Utilities
+### Browser
+
+firefox
+firefox-ublock-origin
+
+### Multimedia
+
+ffmpeg
+ffmpegthumbs
+ffnvcodec-headers
+
+### PKG Management
+
+yay-bin
+flatpak
+topgrade
+pacseek-bin
+pacman-contrib
+pacman-mirrorup
+pacman-bintrans
+pacman-mirrorlist
+
+#######################################################
+###                  Libraries                      ###
+#######################################################
+
+### File management
+
+gvfs
+mtpfs
+udiskie
+udisks2
+ldmtool
+gvfs-goa
+gvfs-afc
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+gvfs-google
+gvfs-gphoto2
+
+### Tumbler
+
+libgsf
+tumbler
+freetype2
+libopenraw
+poppler-qt5
+poppler-glib
+ffmpegthumbnailer
+
+### Python & Libs
+
+python-pip
+python-cffi
+python-numpy
+python-docopt
+python-pyaudio
+python-pyparted
+python-pygments
+python-websockets
+
+#######################################################
+###                XeroLinux Extras                 ###
+#######################################################
 
 vi
 duf
 gcc
 git
-gts
 npm
-w3m
 yad
 zip
 xdo
@@ -316,12 +466,9 @@ vala
 htop
 lshw
 cmake
-boost
 cblas
 expac
-fuse2
 fuse3
-gtest
 lhasa
 meson
 ninja
@@ -348,9 +495,7 @@ zenity
 dnsmasq
 hddtemp
 mlocate
-gtk-doc
 jsoncpp
-archey3
 fuseiso
 gettext
 gparted
@@ -368,7 +513,6 @@ asciinema
 oniguruma
 appstream
 cifs-utils
-file-roller
 lsb-release
 dbus-python
 dconf-editor
@@ -379,132 +523,6 @@ gnome-disk-utility
 appmenu-gtk-module
 hardcode-fixer-git
 extra-cmake-modules
-power-profiles-daemon
-
-### G-Streamer
-
-gstreamer
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-ugly
-gst-plugins-good
-gst-plugin-pipewire
-
-## Pipewire Audio
-
-wireplumber
-pipewire-jack
-pipewire-support
-lib32-pipewire-jack
-
-### Bluetooth
-
-bluez
-blueberry
-bluez-libs
-bluez-utils
-bluez-plugins
-bluez-hid2hci
-
-### Network
-
-avahi
-openldap
-nss-mdns
-smbclient
-net-tools
-openresolv
-traceroute
-modemmanager
-networkmanager
-nm-cloud-setup
-rate-mirrors-bin
-systemd-resolvconf
-networkmanager-vpnc
-networkmanager-pptp
-networkmanager-l2tp
-network-manager-sstp
-network-manager-applet
-networkmanager-openvpn
-systemd-boot-pacman-hook
-networkmanager-strongswan
-networkmanager-openconnect
-mobile-broadband-provider-info
-
-### File management
-
-gvfs
-mtpfs
-udiskie
-udisks2
-ldmtool
-gvfs-afc
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-gvfs-gphoto2
-
-### Tumbler
-
-libgsf
-tumbler
-freetype2
-libopenraw
-poppler-qt5
-poppler-glib
-ffmpegthumbnailer
-
-### Python & Libs
-
-python-pip
-python-cffi
-python-numpy
-python-docopt
-python-pyaudio
-python-pyparted
-python-pygments
-python-websockets
-
-###########################################################################
-#                           XEROLINUX_SELECTION
-###########################################################################
-
-### Browser
-
-firefox
-firefox-ublock-origin
-
-### Multimedia
-
-ffmpeg
-ffmpegthumbs
-
-### PKG Management
-
-yay-bin
-flatpak
-topgrade
-pacseek-bin
-pacman-mirrorup
-
-#######################################################
-###                    EXTRAS                       ###
-#######################################################
-
-### Xorg Applications
-
-xorg-apps
-xorg-xinit
-xorg-server
-
-### Virtual Machine
-
-spice-vdagent
-open-vm-tools
-qemu-guest-agent
-virtualbox-guest-utils
-
 
 #######################################################
 ###                 GNOME Desktop                   ###
@@ -514,55 +532,84 @@ virtualbox-guest-utils
 ## GNOME Stuff
 ## https://archlinux.org/groups/x86_64/gnome/
 
-gnome-logs
+tecla
+totem
+loupe
+rygel
+sushi
+baobab
+cheese
+evince
+snapshot
 gnome-maps
-gnome-panel
-gnome-shell
 gnome-usage
-gnome-mines
 gnome-menus
 gnome-music
-gnome-autoar
-gnome-photos
-gnome-tweaks
+gnome-shell
+simple-scan
 gnome-clocks
+gnome-autoar
 gnome-weather
+gnome-photos
+grilo-plugins
 gnome-session
-gnome-mplayer
+gnome-keyring
+gnome-calendar
+gnome-contacts
+tracker3-miners
+gnome-user-share
+gnome-calculator
+gnome-characters
+gnome-connections
+gnome-font-viewer
+xdg-user-dirs-gtk
+gnome-disk-utility
+gnome-color-manager
+gnome-control-center
+gnome-remote-desktop
+gnome-system-monitor
+gnome-settings-daemon
+gnome-shell-extensions
+xdg-desktop-portal-gnome
+
+## Other Gnome Apps
+## https://archlinux.org/groups/x86_64/gnome-extra/
+
+gitg
+d-spy
+geary
+gedit
+glade
+sysprof
+evolution
+endeavour
+accerciser
+file-roller
+gnome-tweaks
+dconf-editor
+gnome-desktop
+gnome-builder
 gnome-nettool
 gnome-applets
-gnome-keyring
-gnome-contacts
-gnome-calendar
 gnome-firmware
 gnome-podcasts
-gnome-flashback
-gnome-desktop-4
-gnome-characters
-gnome-calculator
-gnome-screenshot
 gnome-dictionary
-gnome-user-share
-gnome-connections
-gnome-break-timer
-gnome-font-viewer
+gnome-multi-writer
 gnome-system-tools
-gnome-multi-writer
-gnome-disk-utility
-gnome-multi-writer
-gnome-power-manager
 gnome-bluetooth-3.0
-gnome-control-center
-gnome-system-monitor
+gnome-power-manager
+gnome-sound-recorder
 gnome-desktop-common
-gnome-remote-desktop
 gnome-online-accounts
-gnome-settings-daemon
 gnome-epub-thumbnailer
 gnome-browser-connector
 gnome-icon-theme-extras
 gnome-appfolders-manager
 gnome-terminal-transparency
+
+#######################################################
+###              GNOME Desktop Extras               ###
+#######################################################
 
 ## GDM
 
@@ -570,9 +617,7 @@ gdm
 
 ## Gnome File Management
 
-gvfs-goa
 turtle-git
-gvfs-google
 nautilus-share
 nautilus-launch
 nautilus-compare
@@ -586,20 +631,7 @@ gnome-shell-extensions
 gnome-x11-gesture-daemon
 gnome-gesture-improvements
 
-## Other Gnome Apps
-## https://archlinux.org/groups/x86_64/gnome-extra/
+### Useful shit
 
-sushi
-gedit
-totem
-geary
-loupe
-cheese
-baobab
 deja-dup
-accerciser
-file-roller
-font-manager
-xdg-user-dirs-gtk
 libappindicator-gtk3
-xdg-desktop-portal-gnome
