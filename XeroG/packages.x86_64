@@ -512,6 +512,7 @@ virtualbox-guest-utils
 
 
 ## GNOME Stuff
+## https://archlinux.org/groups/x86_64/gnome/
 
 gnome-logs
 gnome-maps
@@ -584,15 +585,15 @@ nautilus-image-converter
 gnome-shell-extensions
 gnome-x11-gesture-daemon
 gnome-gesture-improvements
-gnome-shell-extension-pop-shell-git
 
 ## Other Gnome Apps
+## https://archlinux.org/groups/x86_64/gnome-extra/
 
-eog
 sushi
 gedit
 totem
 geary
+loupe
 cheese
 baobab
 deja-dup
