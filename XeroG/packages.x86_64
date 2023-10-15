@@ -242,7 +242,7 @@ xf86-video-openchrome
 piper
 imwheel
 fprintd
-libinput
+touchegg
 gestures
 fingerprint-gui
 xf86-input-void
