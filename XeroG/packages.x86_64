@@ -196,12 +196,9 @@ libxinerama
 bash-completion
 
 ### Xorg Applications
+### https://archlinux.org/groups/x86_64/xorg-apps/
 
 xorg-apps
-xorg-xrdb
-xorg-xkill
-xorg-xinit
-xorg-server
 
 ### Essentials
 
