@@ -33,7 +33,7 @@ Afterwards, follow steps 1 & 2 to build the ISO...
 
 - Create The Container :
 ```
-distrobox create -i quay.io/toolbx-images/archlinux-toolbox -n "xerobuilder"
+distrobox create -i quay.io/toolbx-images/archlinux-toolbox -n "xerobuilder" --root  
 ```
 
 - Enter the Container :
